@@ -1,0 +1,21 @@
+language = "python3"
+run = "python main.py"
+
+[packager]
+language = "python3"
+
+[packager.features]
+packageSearch = true
+guessImports = true
+enabledForHosting = true
+
+[env]
+PORT = "8080"
+
+[deployment]
+run = ["python", "main.py"]
+build = ["pip", "install", "-r", "requirements.txt"]
+
+[[ports]]
+localPort = 8080
+externalPort = 80
