@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "royal-mail-bot"
+version = "1.0.0"
+description = "Royal Mail Store Telegram Bot"
+authors = ["You"]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+python-telegram-bot = "^20.7"
+flask = "^3.0.0"
+waitress = "^3.0.0"
